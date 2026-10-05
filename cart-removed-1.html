@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Keranjang Belanja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="index.html"><i class="bi bi-bag-heart"></i> ShopEase</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-warning position-relative text-dark fw-semibold active" href="cart.html">
+                            <i class="bi bi-cart-fill"></i> Keranjang
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <h1 class="fw-bold h3">Keranjang Belanja Anda</h1>
+            <p class="text-secondary small mb-0">Produk berhasil dihapus dari keranjang.</p>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm p-4 mb-4">
+                        <h4 class="fw-bold mb-3">Daftar Produk (1 Item)</h4>
+                        <div class="row align-items-center">
+                            <div class="col-md-2 col-3">
+                                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=200&q=80" class="img-fluid rounded" alt="Item">
+                            </div>
+                            <div class="col-md-6 col-9">
+                                <h6 class="fw-bold mb-1">Classic Minimalist Watch</h6>
+                                <p class="text-muted small mb-0">Kategori: Aksesoris</p>
+                                <span class="text-dark fw-bold">Rp 299.000</span>
+                            </div>
+                            <div class="col-md-4 col-12 mt-3 mt-md-0 text-md-end">
+                                <a href="cart.html" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i> Hapus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm p-4 bg-light">
+                        <h4 class="fw-bold mb-3">Ringkasan Belanja</h4>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted">Total Harga (1 barang)</span>
+                            <span class="fw-bold">Rp 299.000</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3 pb-3 border-bottom">
+                            <span class="text-muted">Biaya Pengiriman</span>
+                            <span class="text-success fw-bold">Gratis</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <span class="fw-bold fs-5">Total Pembayaran</span>
+                            <span class="fw-bold fs-5 text-dark">Rp 299.000</span>
+                        </div>
+                        <a href="checkout-success.html" class="btn btn-dark w-100 fw-bold py-2"><i class="bi bi-bag-check-fill"></i> Checkout Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black text-white py-4 border-top border-secondary">
+        <div class="container text-center"><p class="mb-1">&copy; 2026 ShopEase.</p></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

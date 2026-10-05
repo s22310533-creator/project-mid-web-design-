@@ -1,0 +1,243 @@
+/* Custom CSS for ShopEase (Student Project) */
+:root {
+    --primary-color: #212529;
+    --accent-color: #ffc107;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.feature-card {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.feature-card:hover {
+    background-color: #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08) !important;
+}
+
+.gallery-item img {
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* FORM */
+header {
+    background-color:#212529;
+    color: white;
+
+    align-items: center;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container {
+    width: 400px;
+    max-width: 90%;
+
+    margin: 60px auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+.checkout {
+    width: 500px;
+    max-width: 90%;
+
+    margin: 50px auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+.checkout h1 {
+    margin-bottom: 20px;
+}
+
+.about {
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+}
+
+.about p {
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color:#212529;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .detail {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.product-card {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 250px;
+}
+
+.product-card h3 {
+    margin: 15px 0 10px;
+}
+
+.product-card p {
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+
+    background-color: #333;
+    color: white;
+
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    margin-top: 10px;
+
+    cursor: pointer;
+}
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
